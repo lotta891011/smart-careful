@@ -1,0 +1,201 @@
+body {
+	background-color: #000;
+	overflow: hidden;
+}
+
+
+
+
+.wrapper {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+h1 {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 40vh;
+	color: whitesmoke;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .8em;
+	font-size: 2vw;
+	font-weight: normal;
+	opacity: .2;
+	text-transform: uppercase;
+	text-shadow: hsla(0, 45%, 5%, .3) 0 0 1px, hsla(360, 55%, 95%, .3) 0 -1px 2px, hsla(0, 45%, 5%, .3) 0 -1px 2px, hsla(360, 55%, 95%, .3) 0 20px 15px;
+}
+
+@keyframes title {
+	0% {
+		opacity: 1;
+	}
+
+	10% {
+		opacity: .8;
+	}
+
+	25% {
+		opacity: .5;
+	}
+
+	50% {
+		opacity: .3;
+	}
+
+	65% {
+		opacity: .5;
+	}
+
+	90% {
+		opacity: .8;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes title {
+	0% {
+		opacity: 1;
+	}
+
+	10% {
+		opacity: .8;
+	}
+
+	25% {
+		opacity: .5;
+	}
+
+	50% {
+		opacity: .3;
+	}
+
+	65% {
+		opacity: .5;
+	}
+
+	90% {
+		opacity: .8;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes title {
+	0% {
+		opacity: 1;
+	}
+
+	10% {
+		opacity: .8;
+	}
+
+	25% {
+		opacity: .5;
+	}
+
+	50% {
+		opacity: .3;
+	}
+
+	65% {
+		opacity: .5;
+	}
+
+	90% {
+		opacity: .8;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes title {
+	0% {
+		opacity: 1;
+	}
+
+	10% {
+		opacity: .8;
+	}
+
+	25% {
+		opacity: .5;
+	}
+
+	50% {
+		opacity: .3;
+	}
+
+	65% {
+		opacity: .5;
+	}
+
+	90% {
+		opacity: .8;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.title {
+	-webkit-animation: title 8s infinite ease-in;
+	-moz-animation: title 8s infinite ease-in;
+	-o-animation: title 8s infinite ease-in;
+	animation: title 8s infinite ease-in;
+}
+
+h2 {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50vh;
+	color: grey;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .2em;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+
+
+
+
+.link {
+	position: relative;
+	width: 18%;
+	margin-left: 40%;
+	text-align: center;
+	top: 70vh;
+	font-family: 'Montserrat';
+	background-color: #333333;
+	border: #333333;
+	border-radius: 5px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+
+}
+
+.link {
+	transition-duration: 0.4s;
+}
+
+.link:hover {
+	background-color: #E26847;
+	color: white;
+}
+

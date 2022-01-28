@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Cyberbezpieczeństwo - wpisy</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i&display=swap&subset=latin-ext" rel="stylesheet">
+
+     <link rel="stylesheet" th:href="@{/styles/style2.css}">
+
+</head>
+
+<body>
+
+
+
+<h1>CYBERBEZPIECZEŃSTWO</h1>
+
+<h2>Zobacz nasze wpisy</h2>
+
+
+
+<div class="container-fluid">
+
+
+    <!--/*@thymesVar id="article" type="com.einternetabuse.rescue.commands.ArticleCommand"*/-->
+
+    <div th:each="article : ${articles}">
+        <div class="wrapper">
+            <div class="tytul" th:text="${article.title}">Pierwszy</div>
+        </div>
+        <div class="tresc" th:text="${article.content}">Test </div>
+
+    </div>
+
+    <a href="#" th:href="@{'/article/new'}" role="button" class="link">Dodaj wpis</a>
+
+
+    <div class="vl"></div>
+
+</div>
+
+<div class="menu">
+
+    <!--/*@thymesVar id="article" type="com.einternetabuse.rescue.commands.ArticleCommand"*/-->
+
+    <div class="linki" th:each="article : ${articles}">
+
+        <a href="#" th:href="@{'/article/' + ${article.id} + '/show'}" th:text="${article.title}">Tytuł</a>
+
+    </div>
+
+</div>
+
+
+
+
+</body>
+
+</html>

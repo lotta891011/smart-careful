@@ -1,0 +1,90 @@
+body {
+	background: black;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	margin: 20px;
+	width: 100%;
+	color: whitesmoke;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .3em;
+	font-size: 1.5vw;
+	font-weight: normal;
+	opacity: .3;
+}
+
+.container-fluid {
+	width: 80%;
+	height: 1200px;
+	float: left;
+	background: black;
+}
+
+.wrapper {
+	height: 10%;
+	display: flex;
+	justify-content: center;
+}
+
+.tytul {
+	color: whitesmoke;
+	width: 80%;
+	animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 2px solid;
+	font-size: 2em;
+}
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent
+	}
+}
+
+
+
+.tresc {
+	color: whitesmoke;
+	margin: 30px;
+	font-size: 1.5vw;
+
+}
+
+
+.vl {
+	border-left: 2px solid whitesmoke;
+	height: 3000px;
+	/* ^ zmień na tyle żeby obejmowało całą stronę */
+	position: absolute;
+	left: 79%;
+	margin-left: -3px;
+	top: 15%;
+}
+
+.menu {
+	width: 20%;
+	height: 1200px;
+	float: right;
+	background-color: black;
+	line-height: normal;
+}
+
+.link {
+	font-size: 30px;
+	margin: auto;
+	color: #6C6E70;
+}
+
+.linki {
+	font-size: 30px;
+	margin: auto;
+	color: #6C6E70;
+}
