@@ -31,8 +31,4 @@ public class ArticleController {
         return "article2";
     }
 
-    @RequestMapping("/article3")
-    public String getArticle3(){
-        return "article3";
-    }
 }
